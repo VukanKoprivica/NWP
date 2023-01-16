@@ -1,0 +1,16 @@
+<div class="tabs">
+ <nav mat-tab-nav-bar  style=" text-align: center; background-color: black; height: 50px; padding-top: 15px;" >
+    <a mat-tab-link routerLink="/news/list" routerLinkActive="active" style=" color: white;padding-right: 60px; padding-left:60px;padding-top: 15px;padding-bottom: 15px; " >Latest</a>
+    <a mat-tab-link routerLink="/results" routerLinkActive="active" style=" color: white;padding-right: 60px; padding-left:60px;padding-top: 15px;padding-bottom: 15px; " >Results</a>
+    <a mat-tab-link routerLink="/driver/list" routerLinkActive="active" style="color: white;padding-right: 60px; padding-left:60px;padding-top: 15px;padding-bottom: 15px;">StandingDrivers</a>
+    <a mat-tab-link routerLink="/team/list" routerLinkActive="active" style=" color: white;padding-right: 60px; padding-left:60px;padding-top: 15px;padding-bottom: 15px;">StandingContructor</a>
+    <a mat-tab-link routerLink="/arhive" routerLinkActive="active" style=" color: white;padding-right: 60px; padding-left:60px;padding-top: 15px;padding-bottom: 15px;">Arhive</a>
+    <a mat-tab-link routerLink="/login" routerLinkActive="active" style=" color: white;padding-right: 50px; padding-left:50px;padding-top: 15px;padding-bottom: 15px; " >Login</a>
+    <a mat-tab-link routerLink="/register" routerLinkActive="active" style="color: white;padding-right: 50px; padding-left:50px;padding-top: 15px;padding-bottom: 15px;">Register</a>
+    <a mat-tab-link routerLink="/login" routerLinkActive="active" style=" color: white;padding-right: 50px; padding-left:50px;padding-top: 15px;padding-bottom: 15px; " >Log out</a>
+    <button mat-button routerLink="/subscribe" routerLinkActive="active"   color="warn">SUBSCRIBE</button>
+    </nav>
+
+
+<router-outlet></router-outlet>
+</div>

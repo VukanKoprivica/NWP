@@ -1,0 +1,28 @@
+<button *ngIf="this.isVisible" routerLink="/addStory">ADD Story</button>
+
+<div class="con">
+<h1 style="font-size:50px ;">Latest F1 News</h1>
+
+<mat-grid-list  cols="13" rowHeight="100px">
+    
+    <mat-grid-tile  
+        *ngFor="let news of newsList"
+        [colspan]="0.7121*news.newsID"
+        [rowspan]="0.56655*news.newsID"
+        routerLink="/news/{{news.newsID}}"
+        >
+        
+
+     <img style="size: 100% 100%; border-radius: 7px;" [src]="news.imageURL">
+    <h2 style=" position: absolute; 
+    bottom: 0; 
+    background : rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.7); 
+     color: #f1f1f1; 
+    
+         padding: 25px; ">{{news.header}}</h2>
+       
+        </mat-grid-tile>
+   
+  </mat-grid-list>
+</div>

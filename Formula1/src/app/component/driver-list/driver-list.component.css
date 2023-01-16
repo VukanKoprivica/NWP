@@ -1,0 +1,68 @@
+
+
+.stranica{
+    background-image: url('https://www.thesportsgeek.com/app/uploads/2022/03/hamilton-verstappen-leclerc-formula-1-red-background-1-1280x720.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    
+    background-clip:initial;
+    height: 1800px;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    
+    padding-left: 12%;
+    padding-top: 7%;
+}
+.naslov{
+
+    width: 245px;
+    color: azure;
+    
+}
+
+.mat-elevation-z8-standingD{
+    width: auto;
+}
+
+
+.mat-column-position{
+    
+    width: 3px;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 2%;
+    background-color: rgb(248, 101, 101);
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.mat-column-driver{
+    text-justify: inter-word;
+    word-spacing: 5px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: rgb(224, 223, 223);
+    text-align: center;
+}
+.mat-column-team{
+    width: 350px;
+    border: 1px solid black ;
+    background-color: rgb(224, 223, 223);
+    text-align: center;
+}
+.mat-column-nationality{
+
+    width: 200px;
+    border: 1px solid black ;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+
+
+}
+.mat-column-points{
+    width: 175px;
+    border: 1px solid black ;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}

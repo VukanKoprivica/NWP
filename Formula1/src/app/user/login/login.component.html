@@ -1,0 +1,34 @@
+<div class="form-group">
+    <div class="login">
+    <mat-card>
+        <mat-card-content >
+            <form (ngSubmit)="login()">
+                <h2 ><strong >Log in</strong></h2>
+                
+                <!-- <div>
+                    <input type="text" placeholder="Username" required name="username" [(ngModel)]="username">
+                </div> -->
+                <mat-form-field  appearance="fill">
+                    <mat-label style="font-size: 20px ;">Username</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="Username" required name="username" [(ngModel)]="username">
+                </mat-form-field><br>
+                <!-- <div>
+                    <input type="password" placeholder="Password" required name="password" [(ngModel)]="password">
+                </div> --><br>
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">Password</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="password" placeholder="Password" required name="password"
+                        [(ngModel)]="password">
+                </mat-form-field><br>
+                <br>
+                <button style="width: 100px; background-color:rgb(250, 55, 55); color: white;" type="submit" class="btn btn-warning">Login</button>
+            </form>
+
+            <div><br>
+                <span style=" font-size: 18px ;">Don't have an account yet? </span>
+                <span style="font-size: 18px ; color: white;"><a routerLink="/register" style="font-size: 18px ; color: rgb(207, 175, 255);" routerLinkActive="active"> Register here</a></span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    </div>
+</div>

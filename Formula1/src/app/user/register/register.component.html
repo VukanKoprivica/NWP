@@ -1,0 +1,41 @@
+<div class="form-group">
+    <div class="register">
+    <mat-card>
+        <mat-card-content>
+            <form (ngSubmit)="register()">
+                <h2><strong style="color:white;background-color: rgb(121, 120, 120); font-size: 30px;">Register</strong></h2><br>
+                <!-- <div>
+                    <input type="text" placeholder="Username" required name="username" [(ngModel)]="username">
+                </div> -->
+
+                <mat-form-field appearance="fill"  >
+                    <mat-label  style="font-size: 20px ; color:white;">firstName</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height: 25px;background-color: white;" matInput type="text" placeholder="firstName" required name="firstName" [(ngModel)]="firstName">
+                </mat-form-field><br><br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label  style="font-size: 20px ; color: white; ">lastName</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height: 25px; background-color: white;" matInput type="text" placeholder="lastName" required name="lastName" [(ngModel)]="lastName">
+                </mat-form-field><br><br>
+
+
+                <mat-form-field appearance="fill">
+                    <mat-label  style="font-size: 20px ;color: white;">Username</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;background-color: white;" matInput type="text" placeholder="Username" required name="username" [(ngModel)]="username">
+                </mat-form-field>
+                <!-- <div>
+                    <input type="password" placeholder="Password" required name="password" [(ngModel)]="password">
+                </div> --><br><br>
+                <mat-form-field appearance="fill">
+                    <mat-label  style="font-size: 20px ;color: white;">Password</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;background-color: white;" matInput type="password" placeholder="Password" required name="password"
+                        [(ngModel)]="password">
+                </mat-form-field><br><br>
+
+                <br>
+                <button type="submit" style="color: white; background-color: red;" class="btn btn-warning">Register</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+    </div>
+</div>

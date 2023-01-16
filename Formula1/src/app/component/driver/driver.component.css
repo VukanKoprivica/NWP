@@ -1,0 +1,15 @@
+.page{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.podaci{
+    padding-left:300px ;
+    padding-right:70px ;
+    text-align: left;
+    padding-top: 50px;
+    
+}
+.image{
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+<div class="inline" >
+    <div class="field">
+    <mat-form-field style="width: 500px " >
+      <mat-label>2021</mat-label>
+      <mat-select style=" background-size: contain;  padding-right: 20px;" [(ngModel)]="selectedYear" name="year">
+        <mat-option (click)="result()"   *ngFor="let year of years" [value]="year.id">
+          {{year.id}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+     </div>
+    <mat-form-field  >
+   
+      <mat-label  >Driver Standing</mat-label>
+      <mat-select style=" background-size: contain;  padding-right: 20px;" [(ngModel)]="selectedType" name="type">
+        <mat-option  (click)="result()" *ngFor="let type of raceType" [value]="type.typeID">
+          {{type.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+    <div class="tableS">
+    <section class="example-container mat-elevation-z8-standingD" tabindex="0">     
+        <table mat-table [dataSource]="results" class="table-s">
+      
+          <ng-component matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef><strong style="letter-spacing: 3px; color: black; font-size: 15px;" > No.</strong> </th>
+              <td mat-cell
+            
+               *matCellDef="let result"><strong> {{result.position}}</strong></td>
+          </ng-component>    
+      
+          <ng-component matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> <strong style="letter-spacing: 3px; color: black; font-size: 15px;">  Name </strong></th>
+              <td mat-cell
+             
+               *matCellDef="let result" style="padding-top: 10px;"> {{result.driverName}}<br>{{result.teamName}} <br>
+      
+          </ng-component> 
+      
+          <ng-component matColumnDef="points">
+              <th mat-header-cell *matHeaderCellDef> <strong style="letter-spacing: 3px; color: black; font-size: 15px;"> Points</strong> </th>
+              <td mat-cell
+             
+               *matCellDef="let result"> {{result.points}} </td>
+          </ng-component> 
+      
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row 
+          *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+               </table>
+      
+            </section>
+
+          
+          </div>

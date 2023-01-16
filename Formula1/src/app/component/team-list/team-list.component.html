@@ -1,0 +1,64 @@
+
+
+<div class="stranica">
+    
+
+    
+    <div class="naslov">
+    <h1><strong>2022 Constructor Standings</strong></h1>
+    </div>
+    <section class="mat-elevation-z8-standing" tabindex="0"  >
+        
+    <table mat-table [dataSource]="teams" class="table-s">
+
+        <ng-component matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef><strong style="letter-spacing: 1px; color:black;  font-size: 10px;"> No. </strong></th>
+            <td mat-cell 
+            routerLink="/team/{{team.teamID}}"
+            *matCellDef="let team "><strong> {{team.position}} </strong></td>
+        </ng-component>  
+
+        <ng-component matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> <strong style="letter-spacing: 5px; color:black; font-size: 10px;"  >NAME</strong> </th>
+            <td mat-cell
+            routerLink="/team/{{team.teamID}}"
+            *matCellDef="let team"> {{team.name}} &nbsp;&nbsp;&nbsp;
+                <img [src]="team.imageURL" style="
+                
+                margin: 10px 10px;
+                width: 50px;
+                text-align: end;"></td>
+            
+        </ng-component> 
+
+        <ng-component matColumnDef="engines">
+            <th mat-header-cell *matHeaderCellDef> <strong style="letter-spacing: 5px;color:black; font-size: 10px;"  >ENGINE</strong> </th>
+            <td mat-cell  routerLink="/team/{{team.teamID}}"
+            *matCellDef="let team"> {{team.engines}} </td>
+        </ng-component> 
+
+        <ng-component matColumnDef="drivers">
+            <th mat-header-cell *matHeaderCellDef> <strong style="letter-spacing: 5px;color:black; font-size: 10px;"  >  DRIVERS </strong></th>
+            <td mat-cell 
+            routerLink="/team/{{team.teamID}}"
+            *matCellDef="let team"> {{team.driver1}}<br> {{team.driver2 }} 
+                
+
+        </ng-component>  
+
+        <ng-component matColumnDef="points">
+            <th mat-header-cell *matHeaderCellDef><strong style="letter-spacing: 5px;color:black; font-size: 10px;"  > POINTS </strong></th>
+            <td mat-cell 
+            routerLink="/team/{{team.teamID}}"
+            *matCellDef="let team"><strong> {{team.points}}</strong></td>
+        </ng-component> 
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+
+</section>
+
+</div>

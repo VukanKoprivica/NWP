@@ -1,0 +1,57 @@
+.stranica{
+
+    background-image: url('https://www.formulanerds.com/wp-content/uploads/2022/02/SI202103300196_hires_jpeg_24bit_rgb-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-clip:initial;
+    height: 1200px;
+    padding-left: 12%;
+    padding-top: 10%;
+}
+.naslov{
+    width: 500px;
+    color: azure;
+}
+
+.mat-column-position{
+    
+    width: 3px;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 2%;
+    background-color: rgb(248, 101, 101);
+    padding-right: 20px;
+    text-align: center;
+}
+
+.mat-column-name{
+    
+    word-spacing: 1px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: rgb(224, 223, 223);
+    text-align: center;
+}
+.mat-column-points{
+    width: 150px;
+    border: 1px solid black ;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+.mat-column-engines{
+
+    width: 300px;
+    border: 1px solid black ;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+
+
+}
+.mat-column-drivers{
+    width: 300px;
+    border: 1px solid black ;
+    background-color: rgb(224, 223, 223);
+    text-align: center;
+}

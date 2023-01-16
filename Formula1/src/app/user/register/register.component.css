@@ -1,0 +1,24 @@
+.register{
+    padding-left: 30%;
+    padding-top: 3%;
+    background-image: url('https://cdn.flickeringmyth.com/wp-content/uploads/2019/05/F1-Manager_Icon-e1557498360481.png');
+    background-size: 100% 90%;
+    height: 800px;
+}
+
+.mat-card{
+    text-align: center;
+    background-color: rgb(121, 120, 120,0.7);
+    width: 550px;   
+    color: white;
+    height: 560px;
+    border: 1px solid black;
+
+}
+.mat-form-field{
+    background-color:transparent;
+    color: black;
+    height: 78px;
+    width: 400px;
+    
+}

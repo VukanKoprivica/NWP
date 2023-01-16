@@ -1,0 +1,55 @@
+<div class="form-group">
+    <div class="subscribe">
+    <mat-card>
+        <mat-card-content >
+            <form (ngSubmit)="subscribe()">
+                <h2 ><strong >Subscribe</strong></h2>
+                
+                <!-- <div>
+                    <input type="text" placeholder="Username" required name="username" [(ngModel)]="username">
+                </div> -->
+                <mat-form-field  appearance="fill">
+                    <mat-label style="font-size: 20px ;">name</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="name" required name="name"
+                     [(ngModel)]="Name">
+                </mat-form-field><br>
+                <!-- <div>
+                    <input type="password" placeholder="Password" required name="password" [(ngModel)]="password">
+                </div> -->
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">cardNumber</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="cardNumber" required name="cardNumber"
+                        [(ngModel)]="cardNumber">
+                </mat-form-field><br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">ExpirationDate</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="ExpirationDate" required name="ExpirationDate"
+                        [(ngModel)]="ExpirationDate">
+                </mat-form-field><br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">SecurityCode</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="SecurityCode" required name="SecurityCode"
+                        [(ngModel)]="SecurityCode">
+                </mat-form-field><br>
+                
+             
+               
+                <br>
+                <button style="width: 100px; background-color:rgb(250, 55, 55); color: white;" type="submit" class="btn btn-warning">subscribe</button>
+            </form>
+<br><br>
+            <button  class="btn rounded" [ngClass]="(selectedButton == true) ? 'btn-primary' : 'btn-default'" (click)="toggleSelect(true)">
+                € 2.99
+                PER MONTH
+             </button>
+
+             <button  class="btn rounded" [ngClass]="(!selectedButton == true) ? 'btn-primary' : 'btn-default'" (click)="toggleSelect(true)">
+                € 26.99
+                PER YEAR
+             </button>
+        </mat-card-content>
+    </mat-card>
+    </div>
+</div>

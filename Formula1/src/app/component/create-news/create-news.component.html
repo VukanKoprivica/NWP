@@ -1,0 +1,44 @@
+<div class="form-group">
+    <div class="create">
+    <mat-card>
+        <mat-card-content >
+            <form (ngSubmit)="create()">
+                <h2 ><strong >Create</strong></h2>
+                
+                <!-- <div>
+                    <input type="text" placeholder="Username" required name="username" [(ngModel)]="username">
+                </div> -->
+                <mat-form-field  appearance="fill">
+                    <mat-label style="font-size: 20px ;">content</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="contetn" required name="contetn"
+                     [(ngModel)]="contetn">
+                </mat-form-field><br>
+                <!-- <div>
+                    <input type="password" placeholder="Password" required name="password" [(ngModel)]="password">
+                </div> --><br>
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">date</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="date" required name="date"
+                        [(ngModel)]="date">
+                </mat-form-field><br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">header</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="text" placeholder="header" required name="header"
+                        [(ngModel)]="header">
+                </mat-form-field><br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label style="font-size: 20px ;">imageURL</mat-label><br>
+                    <input style="border-radius: 5px; border: 1px solid black; height:25px   ;" matInput type="imageURL" placeholder="imageURL" required name="imageURL"
+                        [(ngModel)]="imageURL">
+                </mat-form-field><br>
+                <br>
+                <button style="width: 100px; background-color:rgb(250, 55, 55); color: white;" type="submit" class="btn btn-warning">Create</button>
+            </form>
+
+            
+        </mat-card-content>
+    </mat-card>
+    </div>
+</div>

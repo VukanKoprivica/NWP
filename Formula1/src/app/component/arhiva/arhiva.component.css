@@ -1,0 +1,36 @@
+.inline{
+    padding-top: 2%;
+    text-align: center;
+}
+.tableS{
+    padding-left: 18%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.mat-column-position{
+    
+    width: 3px;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 2%;
+    background-color: rgb(248, 101, 101);
+    padding-right: 20px;
+    text-align: center;
+}
+
+.mat-column-name{
+    text-justify: inter-word;
+    
+    width: 550px;
+    border: 1px solid black;
+    background-color: rgb(224, 223, 223);
+    text-align: center;
+}
+.mat-column-points{
+    text-justify: inter-word;
+    
+    width: 250px;
+    border: 1px solid black;
+    background-color: rgb(224, 223, 223);
+    text-align: center;
+}
